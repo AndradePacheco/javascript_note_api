@@ -1,11 +1,11 @@
 var express = require('express');
 var path = require('path');
 var logger = require('morgan');
-require('./src/config/database');
+require('./config/database');
 var cors = require('cors');
 
-var usersRouter = require('./src/app/routes/users');
-var notesRouter = require('./src/app/routes/notes');
+var usersRouter = require('./app/routes/users');
+var notesRouter = require('./app/routes/notes');
 
 var app = express();
 
